@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>validation</title>
+        <script>
+            function validate()
+            {
+                var valid= false;
+                if(document.getElementById("js").checked)
+                {
+                    valid=true;
+                }
+                else if(document.getElementById("cloud").checked)
+                {
+                    valid=true;
+                }
+               else if(document.getElementById("node").checked)
+                {
+                    valid=true;
+                }
+               else if(document.getElementById("angular").checked)
+                {
+                    valid=true;
+                }
+                if(valid)
+                { 
+                    alert("validation successful");
+                }
+                else
+                {
+                    alert("please select atleast one technology");
+                    return false;
+                }
+                   
+            }
+            
+         
+        </script>
+    </head>
+    <body>
+        <h1>Enter a technology:</h1>
+        <form name="myform" action="new.php" onsubmit="return validate()">
+        
+          <input type="checkbox" id="js" value="js">js
+          <input type="checkbox" id="cloud" value="cloud">cloud
+          <input type="checkbox" id="node" value="node">node
+          <input type="checkbox" id="angulat" value="angular">angular
+          <input type="submit" value="submit">
+        </form>
+        
+       
+        
+    </body>
+</html>
