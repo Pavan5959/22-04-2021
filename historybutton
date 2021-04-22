@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History back</title>
+        <script>
+           function backward()
+           {
+        window.history.backward();
+           }
+        </script>
+    </head>
+    <body>
+        
+        <input type="button" value="back" onclick="backward()">
+    </body>
+</html>
