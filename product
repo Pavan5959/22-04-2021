@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>product details</title>
+        <script>
+  function handleAdd()
+  {
+  var parent=document.getElementById("div2");
+  var child=document.createElement("p");
+  var text=document.createTextNode("TV");
+  child.appendChild(text);
+  parent.appendChild(child);
+  }
+  function  handleDelete() 
+  {
+    var parent=document.getElementById("div2");
+    var child=document.getElementById("C1");
+    parent.removeChild(child);
+}
+        </script>
+    </head>
+    <body>
+        <div id="div2">
+            <p id="L1">Laptop-1000$</p>
+        <p id="C1">Cellphone-300$</p>
+        <input type="button" value="add" onclick="handleAdd()"/>
+        <input type="button" value="delete" onclick="handleDelete()"/>
+        </div>
+
+        
+    </body>
+</html>
