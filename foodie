@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodie</title>
+   <script>
+      function validate()
+      {
+          window.location="http://www.swiggy.com";
+      }
+        
+                
+   </script>
+    </head>
+    <body>
+        <h3>Select the menu</h3>
+        <form name="myform" action="http://www.zomato.com" onchange="return validate()">
+           <select>
+               <option>dosa</option>
+               <option>idly</option>
+               <option>puri</option>
+               <option>others</option>
+           </select>
+                
+            <input type="submit" value="submit">
+            </form>
+            </body>
+</html>
