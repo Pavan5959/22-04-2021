@@ -1,0 +1,18 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+    <title>onsubmit</title>
+    <script>
+        function handleOnSubmit()
+        {
+            alert("submitting the form");
+        }
+    </script>
+        </head>
+        <body>
+            <form onsubmit="handleOnSubmit()">
+               <input type="submit">
+            </form>
+
+        </body>
+    </html>
