@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onchange</title>
+        <script>
+            function handleOnChange(a)
+            {
+                 window.location=a;
+            }
+
+        </script>
+    </head>
+    <body>
+        <select onchange="handleOnChange(this.value)">
+            <option value="">select a website</option>
+            <option value="http://www.newwebsite.com">New WebSite</option>
+            <option value="http://www.Google.com">Google</option>
+            <option value="http://www.javascript.com">javascript</option>
+        </select>
+    </body>
+</html>
