@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EventListerners</title>
+        <script>
+           function handleEvent()
+           {
+               document.getElementById("button1").addEventListener("click",handlebutton);
+               
+               function handlebutton()
+               {
+                   alert("click event");
+               }
+               
+           }
+           window.addEventListener("load",handleEvent);
+        </script>
+    </head>
+    <body>
+        <input type="button" value="click me" id="button1">
+    </body>
+</html>
