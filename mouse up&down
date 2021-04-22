@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Displays all the numbers</title>
+        <script>
+            function handleMouseDown(x)
+            {
+               x.style.color="yellow";
+               x.style.backgroundcolor="orange";
+               x.innerHTML="MOUSEDOWN";
+            }
+            function handleMouseUp(x)
+            {
+                x.style.color="orange";
+               x.style.backgroundcolor="yellow";
+               x.innerHTML="MOUSEUP";
+                 
+            }
+
+
+</script>
+    </head>
+    <body>
+       <p  onmousedown="handleMouseDown(this)"onmouseup ="handleMouseUp(this)">mouseover/mouseout</p> 
+           <!--here this is current element object where here <p> is the current element-->
+    </body>
+</html>
